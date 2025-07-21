@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1290px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.text-yllw {
+    color: #FFC107;
+}
+
+body {
+    background-color: #141414;
+}
+
+header {
+    padding: 28.5px 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.nav__list-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #BDBDBD;
+}
+
+.nav__cta {
+    display: flex;
+    gap: 24px;
+}
+
+.nav__cta-btns {
+    display: flex;
+    gap: 32px;
+}
+
+.nav__cta-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.nav__cta-links {
+    display: flex;
+    gap: 16px;
+}
+
+.nav__cta-link {
+    padding: 13.5px 32px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 32px;
+    color: #fff;
+}
+
+.nav__cta-link-yllw {
+    padding: 13.5px 32px;
+    border: 1px solid #FFC107;
+    border-radius: 32px;
+    color: #000;
+    background-color: #FFC107;
+}
+main{
+    color: #fff;
+}
+.main__title{
+    font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 44px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+.main__title-span{
+    font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 44px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #FFC107;
+
+}
+.main__date{
+    font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+.main__date-span{
+    font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+.main__payments{
+    font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+margin-top: 32px;
+
+}
+.main__payments-cnt{
+    font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: justify;
+color: #BDBDBD;
+margin-top: 16px;
+}
