@@ -21,6 +21,10 @@
                 <li><a class="nav__list-link" href="#">Support</a></li>
                 <li><a class="nav__list-link" href="#">Learn</a></li>
             </ul>
+            <input type="checkbox" id="burger-toggle" class="burger-toggle" hidden>
+            <label for="burger-toggle" class="burger">
+                <img src="https://www.svgrepo.com/show/506800/burger-menu.svg" width="45px" alt="Menu" />
+            </label>
             <div class="nav__cta">
                 <div class="nav__cta-btns">
                     <button class="nav__cta-btn"><img src="./imgs/header search icon.svg" alt="search"></button>
@@ -167,50 +171,20 @@
         </table>
     </section>
     <section class="community">
-        <div>
+        <div class="community__wrapper">
             <img src="./imgs/Top.svg" alt="">
-            <div>
-                <h1>What Our Community Has to Say About Us</h1>
-                <a href="#">View all comments</a>
+            <div class="community__inner">
+                <h1 class="community__title">What Our Community Has to Say <span class="text-yllw">About Us</span></h1>
+                <a class="community__link" href="#">View all comments</a>
             </div>
             <img src="./imgs/Bottem.svg" alt="">
         </div>
-        <div>
-            <img src="./imgs/406.svg" alt="">
-            <div>
-                <img src="./imgs/landing user img1.svg" alt="">
-                <p>As a Zyrix user, I love its easy interface, low fees, great support, top-notch security, and diverse
-                    cryptocurrencies. Perfect for traders!</p>
-
-                <h5>Judith Rodriguez</h5>
-                <p>London, UK</p>
-            </div>
-            <div>
-                <img src="./imgs/landing user img1.svg" alt="">
-                <p>As a Zyrix user, I love its easy interface, low fees, great support, top-notch security, and diverse
-                    cryptocurrencies. Perfect for traders!</p>
-
-                <h5>Judith Rodriguez</h5>
-                <p>London, UK</p>
-            </div>
-            <img src="./imgs/407.svg" alt="">
-        </div>
-        <div>
-            <img src="./imgs/408.svg" alt="">
-            <div>
-                <img src="./imgs/landing user img1.svg" alt="">
-                <p>As a Zyrix user, I love its easy interface, low fees, great support, top-notch security, and diverse
-                    cryptocurrencies. Perfect for traders!</p>
-
-                <h5>Judith Rodriguez</h5>
-                <p>London, UK</p>
-            </div>
-            <img src="./imgs/409.svg" alt="">
-        </div>
+        <img src="./imgs/Center.svg" alt="">
+        <img src="./imgs/Right.svg" alt="">
     </section>
-    <section class="faq">
-        <h1>Frequently Asked <span class="text-yllw"> Questions</span></h1>
-        <div>
+    <section class="faq container">
+        <h1 class="faq__title">Frequently Asked <span class="text-yllw"> Questions</span></h1>
+        <div class="faq__dropdown faq__dropdown-right">
             <p>How does Zyrix work?</p>
             <img src="./imgs/FAQ Arrow.svg" alt="">
         </div>
@@ -224,19 +198,20 @@
                 you can try out different strategies and build your skills on Zyrix without worrying about entry costs.
             </p>
         </div>
-        <div>
+        <div class="faq__dropdown faq__dropdown-right">
             <p>How does Zyrix work?</p>
             <img src="./imgs/FAQ Arrow.svg" alt="">
         </div>
-        <div>
+        <div class="faq__dropdown">
             <p>How does Zyrix work?</p>
             <img src="./imgs/FAQ Arrow.svg" alt="">
         </div>
-        <div>
+        <div class="faq__dropdown faq__dropdown-right">
             <p>How does Zyrix work?</p>
             <img src="./imgs/FAQ Arrow.svg" alt="">
         </div>
     </section>
+
 </body>
 
 </html>
