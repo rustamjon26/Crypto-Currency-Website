@@ -4,13 +4,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul class="nav__list">
+                <li><a class="nav__list-link" href="./index.html"><img src="./imgs/Zyrix Logo.svg" alt="Logo"></a></li>
+                <li><a class="nav__list-link" href="#">Market</a></li>
+                <li><a class="nav__list-link" href="#">Sport</a></li>
+                <li><a class="nav__list-link" href="#">Support</a></li>
+                <li><a class="nav__list-link" href="#">Learn</a></li>
+            </ul>
+            <input type="checkbox" id="burger-toggle" class="burger-toggle" hidden>
+            <label for="burger-toggle" class="burger">
+                <img src="https://www.svgrepo.com/show/506800/burger-menu.svg" width="45px" alt="Menu" />
+            </label>
+            <div class="nav__cta">
+                <div class="nav__cta-btns">
+                    <button class="nav__cta-btn"><img src="./imgs/header search icon.svg" alt="search"></button>
+                    <button class="nav__cta-btn"><img src="./imgs/header map icon.svg" alt="search"></button>
+                </div>
+                <div class="nav__cta-links">
+                    <a class="nav__cta-link-yllw" href="#">Sign up</a>
+                    <a class="nav__cta-link" href="#">Log in</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="container">
+            <h1 class="home__title">Trade, Invest, and Build Your <span class="text-yllw">Future!</span></h1>
+            <p class="home__subtitle">
+                <span>Safe</span>
+                <span>Fast</span>
+                <span>Stable</span>
+                <span>Reliable</span>
+            </p>
+            <a class="home__link" href="#">Start Trading</a>
+        </div>
+    </section>
+    <section class="about container">
+        <ul class="about__list">
+            <li>
+                <h1 class="about__list-num">150</h1>
+                <p class="about__list-text">Countries Covered</p>
+            </li>
+            <img src="./imgs/vertical line dark.svg" alt="">
+            <li class="about__list-item">
+                <h1 class="about__list-num">30M</h1>
+                <p class="about__list-text">Global Investors</p>
+            </li>
+            <img src="./imgs/vertical line dark.svg" alt="">
+            <li class="about__list-item">
+                <h1 class="about__list-num">700+</h1>
+                <p class="about__list-text">Coins</p>
+            </li>
+            <img src="./imgs/vertical line dark.svg" alt="">
+            <li class="about__list-item">
+                <h1 class="about__list-num">$1.54B</h1>
+                <p class="about__list-text">24h Trading Volume</p>
+            </li>
+        </ul>
+    </section>
+    <section class="advs container">
+        <h1 class="advs__title"><span class="text-yllw">Powering </span>Your Crypto Journey</h1>
+        <div class="advs__wrapper">
+            <div class="advs__card">
+                <img class="advs__card-img" src="./imgs/landing page card img1.svg" alt="" width="344px" height="328px">
+                <h2 class="advs__card-title"><span class="text-yllw">Gain Valuable </span>Insight</h2>
+                <p class="advs__card-subtitle">Unlock data-driven insights to make smarter crypto decisions.</p>
+            </div>
+            <div class="advs__card">
+                <img class="advs__card-img" src="./imgs/landing page card img2.svg" alt="" width="344px" height="328px">
+                <h2 class="advs__card-title"><span class="text-yllw">Gain Valuable </span>Insight</h2>
+                <p class="advs__card-subtitle">Unlock data-driven insights to make smarter crypto decisions.</p>
+            </div>
+            <div class="advs__card">
+                <img class="advs__card-img" src="./imgs/landing page card img3.svg" alt="" width="336px" height="328px">
+                <h2 class="advs__card-title"><span class="text-yllw">Gain Valuable </span>Insight</h2>
+                <p class="advs__card-subtitle">Unlock data-driven insights to make smarter crypto decisions.</p>
+            </div>
+        </div>
+    </section>
+    <section class="platform container">
+        <div class="platform__wrapper">
+            <div>
+                <h1 class="platform__title"><span class="text-yllw">Trusted</span> exchange platform</h1>
+                <p class="platform__subtitle">Empowering you to streamline your crypto transactions effortlessly while
+                    keeping you ahead in the
+                    ever-evolving decentralized finance ecosystem. Join a network of forward-thinkers who trust our
+                    secure
+                    and innovative solutions to navigate the world of digital assets with confidence and ease
+                </p>
+            </div>
+            <div class="platform__inner">
+                <img src="./imgs/landing circle icon1.svg" alt="">
+                <img src="./imgs/landing circle icon2.svg" alt="">
+                <img src="./imgs/landing circle icon3.svg" alt="">
+                <img src="./imgs/landing circle icon4.svg" alt="">
+                <img src="./imgs/landing circle icon5.svg" alt="">
+                <img src="./imgs/landing circle icon6.svg" alt="">
+                <img src="./imgs/landing circle icon7.svg" alt="">
+                <img src="./imgs/landing circle icon8.svg" alt="">
+                <img src="./imgs/landing circle icon9.svg" alt="">
+                <img src="./imgs/landing circle icon10.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="market container">
+        <h1 class="market__title"><span class="text-yllw">Market</span> Trend</h1>
+        <table class="market__table">
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>24h Changes</th>
+                <th>Chart</th>
+                <th>Action</th>
+            </tr>
+            <tr class="market__table-row--active">
+                <td>1</td>
+                <td><img src="./imgs/bitcoin logo circle.svg" alt="">Bitcoin <sup>BTC</sup></td>
+                <td>$94,456.987</td>
+                <td>+16.5</td>
+                <td><img src="./imgs/landing MIni Chart.svg" alt="" height="50px"></td>
+                <td>Trade</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="./imgs/ethereum logo circle.svg" alt="">Ethereum<sup>ETH</sup></td>
+                <td>$50,632.964</td>
+                <td>-10.8</td>
+                <td><img src="./imgs/landing MIni Chart (2).svg" alt="" height="50px"></td>
+                <td>Trade</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="./imgs/tether logo circle.svg" alt="">Tether<sup>USDT</sup></td>
+                <td>$15,896.123</td>
+                <td>-5.8</td>
+                <td><img src="./imgs/landing MIni Chart (2).svg" alt="" height="50px"></td>
+                <td>Trade</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="./imgs/ripple logo circle.svg" alt="">Ripple <sup>XPR</sup></td>
+                <td>$5,548.621</td>
+                <td>+14.6</td>
+                <td><img src="./imgs/landing MIni Chart.svg" alt="" height="50px"></td>
+                <td>Trade</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><img src="./imgs/dogecoin logo circle.svg" alt="">Dogecoin<sup>Dodge</sup></td>
+                <td>$15,548.621</td>
+                <td>+14.6</td>
+                <td><img src="./imgs/landing MIni Chart (2).svg" alt="" height="50px"></td>
+                <td>Trade</td>
+            </tr>
+        </table>
+    </section>
+    <section class="community">
+        <div class="community__wrapper">
+            <img src="./imgs/Top.svg" alt="">
+            <div class="community__inner">
+                <h1 class="community__title">What Our Community Has to Say <span class="text-yllw">About Us</span></h1>
+                <a class="community__link" href="#">View all comments</a>
+            </div>
+            <img src="./imgs/Bottem.svg" alt="">
+        </div>
+        <img src="./imgs/Center.svg" alt="">
+        <img src="./imgs/Right.svg" alt="">
+    </section>
+    <section class="faq container">
+        <h1 class="faq__title">Frequently Asked <span class="text-yllw"> Questions</span></h1>
+        <div class="faq__dropdown faq__dropdown-right">
+            <p>How does Zyrix work?</p>
+            <img src="./imgs/FAQ Arrow.svg" alt="">
+        </div>
+        <div class="faq__dropdown-open">
+            <div>
+                <h2 class="faq__dropdown-title">Can I start trading with just $1?</h2>
+                <img src="./imgs/FAQ Arrow (1).svg" alt="">
+            </div>
+            <hr>
+            <p>Zyrix offers a variety of trading and investment options that allow you to buy and sell crypto with as
+                little as $1. With products like zero-fee conversion, spot trading, margin trading, and futures trading,
+                you can try out different strategies and build your skills on Zyrix without worrying about entry costs.
+            </p>
+        </div>
+        <div class="faq__dropdown faq__dropdown-right">
+            <p>How does Zyrix work?</p>
+            <img src="./imgs/FAQ Arrow.svg" alt="">
+        </div>
+        <div class="faq__dropdown">
+            <p>How does Zyrix work?</p>
+            <img src="./imgs/FAQ Arrow.svg" alt="">
+        </div>
+        <div class="faq__dropdown faq__dropdown-right">
+            <p>How does Zyrix work?</p>
+            <img src="./imgs/FAQ Arrow.svg" alt="">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="./imgs/Zyrix Logo.svg" alt="Zyrix Logo" />
+                </div>
+                <div class="footer-divider"><img src="./line.png"></div>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i></a> -->
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Exchange</a></li>
+                        <li><a href="#">Spot</a></li>
+                        <li><a href="#">P2P Trading</a></li>
+                        <li><a href="#">Securities Trading</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Mobile App</a></li>
+                        <li><a href="#">Lending Pro</a></li>
+                        <li><a href="#">Reporting APP</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Announcement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Learn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="footer-bottom">
+                <p>Copy Right 2013-2025 Zyrix Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
-<script src="./first.js"></script>
 
 </html>
