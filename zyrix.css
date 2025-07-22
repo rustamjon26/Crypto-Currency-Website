@@ -1,0 +1,508 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #0e0e0e;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .container {
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+  }
+  .navbar {
+    background: #111;
+    padding: 1rem 0;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .logo-icon {
+    color: #f4d33f;
+  }
+  .nav-links {
+    display: flex;
+    gap:1.5rem;
+  }
+  .nav-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .nav-links a:first-child {
+    color: #f4d33f;
+  }
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .nav-actions i {
+    font-size: 1rem;
+    color: #aaa;
+  }
+  .overview-section {
+    padding: 3rem 2rem;
+    background-color: #0e0e0e;
+    color: #fff;
+  }
+  .overview-title{
+    margin-bottom: 20px;
+  }
+  
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    grid-template-areas:
+      "fear-greed market-cap trending"
+      "top-gainer top-gainer top-gainer";
+  }
+  
+  .card {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  .fear-greed {
+    grid-area: fear-greed;
+  }
+  
+  .market-cap {
+    grid-area: market-cap;
+  }
+  
+  .trending {
+    grid-area: trending;
+  }
+  
+  .top-gainer {
+    grid-area: top-gainer;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-header a {
+    color: #f0c93c;
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+  
+  .card img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 8px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  ul li {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  
+  .market-section {
+    padding: 2rem 0;
+  }
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .cards-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    grid-auto-rows: auto;
+  }
+  .full-width {
+    grid-column: span 3;
+  }
+  .card {
+    min-height: 220px;
+  }
+  
+  .fear-greed {
+    min-height: 300px;
+  }
+  .market-table-section {
+    padding: 3rem 0;
+    color: #fff;
+  }
+  
+  .market-filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-tabs {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .filter-tabs li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+  
+  .filter-tabs li.active,
+  .filter-tabs li:hover {
+    background-color: #2c2c2c;
+    color: #f0c93c;
+  }
+  
+  .search-filter {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .search-filter input {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #2c2c2c;
+    color: #fff;
+  }
+  
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    background-color: #f0c93c;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .market-table {
+    background: #141414;
+    border-radius: 16px;
+    overflow-x: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  }
+  
+  .market-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .market-table th,
+  .market-table td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #222;
+  }
+  
+  .market-table td img.icon {
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+  
+  .market-table td .coin-icon {
+    width: 22px;
+    margin-right: 0.5rem;
+  }
+  
+  .coin-code {
+    font-weight: bold;
+    margin-right: 4px;
+  }
+  
+  .green {
+    color: #3dd381;
+  }
+  
+  .red {
+    color: #ff4e4e;
+  }
+  
+  .link {
+    color: #aaa;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  .card-top-gainer{
+   border-radius: 16px;
+   background-color: #141414;
+   padding: 30px;
+  }
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    grid-auto-rows: auto;
+  }
+  
+  .fear-greed {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  
+  .market-cap {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .trending {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  
+  .top-gainer {
+    grid-column: 2 / 4; 
+    grid-row: 2;
+  }
+  
+  .link.trade {
+    color: #f0c93c;
+  }
+  
+  .pagination {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .page-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 0.4rem 0.8rem;
+    margin: 0 0.3rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .page-btn.active {
+    background-color: #f0c93c;
+    color: #000;
+  }
+  
+  .dots {
+    color: #777;
+  }
+  .footer {
+    background-color: #0d0d0d;
+    padding: 40px 0 20px;
+  }
+  
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .footer {
+    background-color: #0d0d0d;
+    padding: 40px 0 20px;
+  }
+  
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .footer-logo img {
+    height: 32px;
+  }
+  
+  .footer-logo .yellow {
+    color: #ffc107;
+  }
+  
+  .footer-socials a {
+    margin-left: 15px;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .footer-socials a:hover {
+    color: #ffc107;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 20px 0;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 10px;
+  
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .footer-column h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  
+  .footer-column a:hover {
+    color: #ffc107;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 20px;
+    margin-bottom: 10%;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  
+  .footer-socials a {
+    margin-left: 15px;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .footer-socials a:hover {
+    color: #ffc107;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 20px 0;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .footer-column h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  
+  .footer-column a:hover {
+    color: #ffc107;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 20px;
+    margin-bottom: 10%;
+  }
+  @media (max-width: 992px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .overview-grid {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "fear-greed"
+        "market-cap"
+        "trending"
+        "top-gainer";
+    }
+  
+    .footer-links {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .footer-column {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
