@@ -1,0 +1,650 @@
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1226px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.text-yllw {
+    color: #FFC107;
+}
+
+body {
+    background-color: #141414;
+}
+
+header {
+    padding: 28.5px 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.nav__list-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #BDBDBD;
+}
+
+.nav__cta {
+    display: flex;
+    gap: 24px;
+}
+
+.nav__cta-btns {
+    display: flex;
+    gap: 32px;
+}
+
+.nav__cta-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.nav__cta-links {
+    display: flex;
+    gap: 16px;
+}
+
+.nav__cta-link {
+    padding: 13.5px 32px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 32px;
+    color: #fff;
+}
+
+.nav__cta-link-yllw {
+    padding: 13.5px 32px;
+    border: 1px solid #FFC107;
+    border-radius: 32px;
+    color: #000;
+    background-color: #FFC107;
+}
+
+/*======================*/
+/*=========HOME=========*/
+/*======================*/
+
+.home {
+    display: flex;
+    align-items: center;
+    background-image: url('./imgs/Background\ Graphics.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 707px;
+}
+
+.home__title {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 144%;
+    letter-spacing: 0%;
+    color: #F5F5F5;
+    max-width: 672px;
+    margin-bottom: 22px;
+}
+
+
+.home__subtitle {
+    display: flex;
+    gap: 16px;
+    font-weight: 400;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #BDBDBD;
+    margin-bottom: 58px;
+}
+
+.home__link {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    color: #000;
+    background-color: #FFC107;
+    padding: 14.5px 64px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border-radius: 32px;
+    border: 4px solid #141414;
+    box-shadow: 0px 0px 0px 1px rgba(255, 193, 7, 0.4);
+
+}
+
+.home__link::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, rgba(255, 193, 7, 0.59), transparent);
+    z-index: 2;
+    filter: blur(8px);
+}
+
+/*======================*/
+/*=========ABOUT========*/
+/*======================*/
+
+.about {
+    background-color: #1C1C1C;
+    color: #F5F5F5;
+    border-radius: 32px;
+    margin-bottom: 100px;
+}
+
+.about__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 67px;
+    padding: 8px 32px;
+    text-align: center;
+}
+
+.about__list-num {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 12px;
+}
+
+.about__list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #BDBDBD;
+}
+
+/*======================*/
+/*=========ADVS=========*/
+/*======================*/
+
+.advs__title {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #F5F5F5;
+    margin-bottom: 34px;
+}
+
+.advs__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 24px;
+    margin-bottom: 25px;
+}
+
+.advs__card {
+    background-color: #1C1C1C;
+    padding: 32px;
+    border-radius: 32px;
+}
+
+.advs__card-img {
+    margin-bottom: 16px;
+}
+
+.advs__card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.advs__card-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #F8F8F8B2;
+}
+
+
+
+
+/*======================*/
+/*=========WALLET=========*/
+/*======================*/
+.menu {
+    line-height: 40px;
+}
+
+.wallet__wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.dropdown-btn {
+    display: flex;
+    gap: 20px;
+    color: #F5F5F5;
+    font-weight: 500;
+
+}
+
+.submenu__list {
+    color: #BDBDBD;
+}
+
+.wallet__author {
+    border-top: solid #fff;
+    width: 250px;
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.wallet__author-img {
+    margin: 20px 0;
+}
+
+.wallet__author-name {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.wallet__author-job {
+    color: #FFC107;
+    font-size: 16px;
+
+}
+
+.assets__wrappr {
+    border: none;
+    width: 900px;
+    height: 30px;
+    display: flex;
+    gap: 20px;
+    background-color: #1C1C1C;
+    border-radius: 20px;
+}
+
+.text {
+    color: #fff;
+}
+
+.bitcoin {
+    margin: 20px 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 360px;
+    border-radius: 20px;
+    background-color: #1C1C1C;
+    height: 240px;
+}
+
+
+
+.bitcoin__wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.bitcoin__logo {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.bitcoin__price {
+    margin: 40px 0 0 0;
+    font-size: 25px;
+}
+
+.deposit {
+    border-radius: 20px;
+    height: 35px;
+    width: 130px;
+    border: 1px solid;
+    color: #FFC107;
+    display: flex;
+    margin: 20px 0;
+    padding: 7px;
+}
+
+.withdraw {
+    border-radius: 20px;
+    height: 35px;
+    width: 130px;
+    border: 1px solid #BDBDBD;
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+    padding: 7px;
+}
+
+.tran {
+    margin: 20px 0;
+    color: #fff;
+    position: relative;
+    height: 240px;
+    width: 360px;
+    border-radius: 20px;
+    background-color: #1C1C1C;
+}
+
+.tran__inner {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency {
+    margin: 25px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.graph {
+    position: absolute;
+    top: 120px;
+}
+
+.graph__per {
+    position: absolute;
+    left: 40px;
+    color: #1ECB4F;
+    top: 160px;
+}
+
+.graph__per-red {
+    position: absolute;
+    left: 40px;
+    color: #A92626;
+    top: 160px;
+}
+
+.asset__over {
+    background-color: #1C1C1C;
+    border-radius: 20px;
+    width: 350px;
+    height: 460px;
+    padding: 10px 20px 20px 20px;
+}
+
+.assets__title {
+    color: #fff;
+}
+
+.assets__imgs {
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.assets__img {
+    display: block;
+    margin: 10px 0;
+}
+
+.assets__img2 {
+    margin: 20px 0 0 40px;
+}
+
+.chart__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total__top {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.total__time {
+    display: flex;
+    gap: 20px;
+    color: #fff;
+}
+
+.chart {
+    background-color: #1C1C1C;
+    width: 760px;
+    border-radius: 20px;
+    padding: 20px;
+    height: 460px;
+}
+
+.chart__img {
+    margin-left: 20px;
+}
+
+.data__wrapper-bottom {
+    display: flex;
+    gap: 20px;
+}
+
+.info {
+    background-color: #1C1C1C;
+    width: 700px;
+    height: 460px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.info__buutton {
+    border-radius: 20px;
+    background-color: #000;
+    height: 35px;
+    padding: 6px;
+
+
+}
+
+.info__button {
+    border: none;
+    color: #fff;
+    background-color: transparent;
+}
+
+.info__link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-right {
+    margin-top: 5px;
+}
+
+
+.trade-table {
+    color: #fff;
+}
+
+.trade-table th,
+.trade-table td {
+    padding: 11px 13px;
+    text-align: left;
+
+}
+
+.completed,
+.buy {
+    color: #1ECB4F;
+}
+
+.failed,
+.sell {
+    color: #E53935;
+}
+
+.date {
+    font-weight: 400;
+}
+
+.quick {
+    background-color: #1C1C1C;
+    width: 400px;
+    height: 460px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px 40px;
+    color: #fff;
+}
+
+.buy__border {
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 320px;
+    height: 35px;
+    margin: 30px 0;
+}
+
+.buuy {
+    border: none;
+    background-color: #FFC107;
+    border-radius: 20px;
+    width: 150px;
+    height: 25px;
+    margin: 5px;
+
+}
+
+.seell {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.border {
+    border: 1px solid gray;
+    border-radius: 30px;
+    width: 320px;
+    height: 55px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.bitcoin__logo-wr {
+    display: flex;
+    gap: 10px;
+}
+
+.cuurrency {
+    background-color: #333333;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    margin-right: 5px;
+    width: 80px;
+}
+
+.order {
+    background-color: #FFC107;
+    border: none;
+    border-radius: 20px;
+    width: 320px;
+    height: 35px;
+    font-weight: 600;
+}
+
+.notifications {
+    padding: 30px 80px;
+    color: gainsboro;
+}
+
+.notifications__wrap {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.notifications__top {
+    display: flex;
+    gap: 20px;
+}
+
+.notifications__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.acrivities {
+    background-color: #1C1C1C;
+    width: 980px;
+    height: 170px;
+    border-radius: 30px;
+    padding: 30px;
+    line-height: 40px;
+    margin: 30px 0;
+}
+
+.trade {
+    border: none;
+    background-color: transparent;
+    color: #FFC107;
+}
+
+.new-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new {
+    display: flex;
+    gap: 10px;
+}
+
+.reg-border {
+    border: 1px solid white;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+
+
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+}
